@@ -119,6 +119,8 @@
 				padding: 1rem;
 				padding-left: 0;
 				padding-right: 0;
+				margin-top: 2rem;
+				margin-bottom: 2rem;
 			}
 			.casino-card {
 				background: #fff;
@@ -129,7 +131,6 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				flex-wrap: wrap;
 			}
 			.casino-card__info {
 				display: flex;
@@ -224,10 +225,10 @@
 				margin: 0;
 			}
 			.casino-card__features {
-				flex: 1;
-				margin-left: 2rem;
+				margin: 0 1rem;
 				padding-left: 1rem;
 				list-style: none;
+				max-width: calc(100% - 180px);
 			}
 			.casino-card__rating {
 				text-align: center;
@@ -319,6 +320,99 @@
 			main {
 				flex: 1;
 			}
+			/* Общие настройки для параграфов */
+			p {
+				font-size: 1.1rem;
+				line-height: 1.6;
+				color: #222;
+				margin-bottom: 1rem;
+				max-width: 800px;
+			}
+
+			/* Заголовки */
+			h1,
+			h2,
+			h3,
+			h4 {
+				font-family: 'Arial Black', Arial, sans-serif;
+				color: #1a1a1a;
+				margin-top: 2rem;
+				margin-bottom: 0.5rem;
+				line-height: 1.2;
+			}
+
+			/* Основной заголовок */
+			h1 {
+				font-size: 2.8rem;
+				font-weight: 900;
+				letter-spacing: 0.05em;
+			}
+
+			/* Второй уровень заголовков */
+			h2 {
+				font-size: 2rem;
+				font-weight: 700;
+				border-bottom: 2px solid #e60000;
+				padding-bottom: 0.3rem;
+			}
+
+			/* Третий уровень заголовков */
+			h3 {
+				font-size: 1.3rem;
+				font-weight: 700;
+				color: black;
+			}
+
+			/* Четвертый уровень заголовков */
+			h4 {
+				font-size: 1rem;
+				font-weight: 600;
+				color: #cc0000;
+				margin-top: 1.5rem;
+				margin-bottom: 0.3rem;
+			}
+
+			/* Списки */
+			ul {
+				max-width: 700px;
+				margin-bottom: 1.5rem;
+				padding-left: 1.5rem;
+				color: #444;
+			}
+
+			li {
+				margin-bottom: 0.6rem;
+				font-size: 1rem;
+				line-height: 1.4;
+			}
+
+			/* Выделение жирным */
+			strong {
+				color: black;
+				font-weight: 700;
+			}
+
+			/* Ссылки */
+			a {
+				color: #b30000;
+				text-decoration: underline;
+			}
+
+			a:hover {
+				color: black;
+			}
+
+			/* Основной контейнер контента для читаемости */
+			.landing-content {
+				max-width: 850px;
+				margin: 0 auto 3rem;
+				padding: 0 1rem;
+			}
+
+			.casino-card__title {
+				font-size: 1.3rem; /* Было примерно 1.5rem или больше, уменьшено */
+				margin: 0.2rem 0;
+			}
 		</style>
 		<!-- SEO + Open Graph + Schema -->
 		<meta property="og:type" content="website" />
@@ -406,225 +500,186 @@
 					<div class="casino-card__info">
 						<img
 							class="casino-card__image"
-							src="abstract-image.jpg"
-							alt="Logo du casino"
+							src="placeholder-logo1.jpg"
+							alt="Logo de Volerbet Casino"
 							loading="lazy"
 						/>
 						<div>
-							<h2 class="casino-card__title">Lorem Casino</h2>
-							<p class="casino-card__bonus">
-								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
-							</p>
+							<h2 class="casino-card__title">Volerbet Casino</h2>
+							<p class="casino-card__bonus">300% Jusqu'à 3000 €</p>
 						</div>
 					</div>
 					<ul class="casino-card__features">
-						<li>✓ Lorem ipsum advantage</li>
-						<li>✓ Another great feature</li>
-						<li>✓ Support 24/7</li>
+						<li>✓ Avantage 1</li>
+						<li>✓ Avantage 2</li>
+						<li>✓ Avantage 3</li>
 					</ul>
 					<div class="casino-card__rating">
-						<p class="casino-card__score">10</p>
+						<p class="casino-card__score">9.8</p>
 						<p class="casino-card__stars">★★★★★</p>
-						<a class="casino-card__button" href="#">Jouez maintenant !</a>
-					</div>
-				</div>
-				<div class="casino-card">
-					<div class="casino-card__info">
-						<img
-							class="casino-card__image"
-							src="abstract-image.jpg"
-							alt="Logo du casino"
-							loading="lazy"
-						/>
-						<div>
-							<h2 class="casino-card__title">Lorem Casino</h2>
-							<p class="casino-card__bonus">
-								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
-							</p>
-						</div>
-					</div>
-					<ul class="casino-card__features">
-						<li>✓ Lorem ipsum advantage</li>
-						<li>✓ Another great feature</li>
-						<li>✓ Support 24/7</li>
-					</ul>
-					<div class="casino-card__rating">
-						<p class="casino-card__score">10</p>
-						<p class="casino-card__stars">★★★★★</p>
-						<a class="casino-card__button" href="#">Jouez maintenant !</a>
-					</div>
-				</div>
-				<div class="casino-card">
-					<div class="casino-card__info">
-						<img
-							class="casino-card__image"
-							src="abstract-image.jpg"
-							alt="Logo du casino"
-							loading="lazy"
-						/>
-						<div>
-							<h2 class="casino-card__title">Lorem Casino</h2>
-							<p class="casino-card__bonus">
-								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
-							</p>
-						</div>
-					</div>
-					<ul class="casino-card__features">
-						<li>✓ Lorem ipsum advantage</li>
-						<li>✓ Another great feature</li>
-						<li>✓ Support 24/7</li>
-					</ul>
-					<div class="casino-card__rating">
-						<p class="casino-card__score">10</p>
-						<p class="casino-card__stars">★★★★★</p>
-						<a class="casino-card__button" href="#">Jouez maintenant !</a>
-					</div>
-				</div>
-				<div class="casino-card">
-					<div class="casino-card__info">
-						<img
-							class="casino-card__image"
-							src="abstract-image.jpg"
-							alt="Logo du casino"
-							loading="lazy"
-						/>
-						<div>
-							<h2 class="casino-card__title">Lorem Casino</h2>
-							<p class="casino-card__bonus">
-								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
-							</p>
-						</div>
-					</div>
-					<ul class="casino-card__features">
-						<li>✓ Lorem ipsum advantage</li>
-						<li>✓ Another great feature</li>
-						<li>✓ Support 24/7</li>
-					</ul>
-					<div class="casino-card__rating">
-						<p class="casino-card__score">10</p>
-						<p class="casino-card__stars">★★★★★</p>
-						<a class="casino-card__button" href="#">Jouez maintenant !</a>
-					</div>
-				</div>
-				<div class="casino-card">
-					<div class="casino-card__info">
-						<img
-							class="casino-card__image"
-							src="abstract-image.jpg"
-							alt="Logo du casino"
-							loading="lazy"
-						/>
-						<div>
-							<h2 class="casino-card__title">Lorem Casino</h2>
-							<p class="casino-card__bonus">
-								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
-							</p>
-						</div>
-					</div>
-					<ul class="casino-card__features">
-						<li>✓ Lorem ipsum advantage</li>
-						<li>✓ Another great feature</li>
-						<li>✓ Support 24/7</li>
-					</ul>
-					<div class="casino-card__rating">
-						<p class="casino-card__score">10</p>
-						<p class="casino-card__stars">★★★★★</p>
-						<a class="casino-card__button" href="#">Jouez maintenant !</a>
-					</div>
-				</div>
-			</section>
-			<section class="landing-content">
-				<h2>Les meilleurs casinos en ligne français fiables en 2025</h2>
-				<p>
-					Le marché du
-					<span>casino en <strong>ligne en France</strong></span> ne cesse de
-					croître, avec une offre toujours plus riche et compétitive. Que vous
-					soyez un joueur occasionnel ou un passionné de jeux de hasard, choisir
-					la bonne plateforme est essentiel pour une expérience sécurisée,
-					fluide et divertissante.
-				</p>
-				<p>
-					Voici mon Top 5 des meilleurs casinos en ligne français, basé sur des
-					critères comme la fiabilité, les bonus, la ludothèque, le service
-					client et la rapidité des retraits.
-				</p>
-				<ul>
-					<li>
-						<strong>Volerbet Casino 9.8</strong> –
 						<a
+							class="casino-card__button"
 							href="https://volerbet.io/"
 							target="_blank"
-							rel="nofollow noopener noreferrer"
-							>300% Jusqu'à 3000 €</a
+							rel="noopener noreferrer"
+							>Jouez maintenant!</a
 						>
-					</li>
-					<li>
-						<strong>Stonevegas Casino 9.6</strong> –
+					</div>
+				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="placeholder-logo2.jpg"
+							alt="Logo de Stonevegas Casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">Stonevegas Casino</h2>
+							<p class="casino-card__bonus">
+								100% Jusqu'à 500 € + 200 Free Spins
+								<br />+1 Bonus Crab
+							</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Avantage 1</li>
+						<li>✓ Avantage 2</li>
+						<li>✓ Avantage 3</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">9.6</p>
+						<p class="casino-card__stars">★★★★★</p>
 						<a
+							class="casino-card__button"
 							href="https://stonevegas.com/"
 							target="_blank"
-							rel="nofollow noopener noreferrer"
-							>100% Jusqu'à 500 € + 200 Free Spins + 1 Bonus Crab</a
+							rel="noopener noreferrer"
+							>Jouez maintenant!</a
 						>
-					</li>
-					<li>
-						<strong>GoldSpin Casino 9.2</strong> –
+					</div>
+				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="placeholder-logo3.jpg"
+							alt="Logo de GoldSpin Casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">GoldSpin Casino</h2>
+							<p class="casino-card__bonus">Jusqu'à 3000 € + 100 Free Spins</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Avantage 1</li>
+						<li>✓ Avantage 2</li>
+						<li>✓ Avantage 3</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">9.2</p>
+						<p class="casino-card__stars">★★★★★</p>
 						<a
+							class="casino-card__button"
 							href="https://www.goldspin06310.com/fr-ca"
 							target="_blank"
-							rel="nofollow noopener noreferrer"
-							>Jusqu'à 3000 € + 100 Free Spins</a
+							rel="noopener noreferrer"
+							>Jouez maintenant !</a
 						>
-					</li>
-					<li>
-						<strong>Robocat Casino 9.0</strong> –
+					</div>
+				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="placeholder-logo4.jpg"
+							alt="Logo de Robocat Casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">Robocat Casino</h2>
+							<p class="casino-card__bonus">
+								100% Jusqu'à 500 € + 200 Free Spins <br />+1 Bonus Crab
+							</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Avantage 1</li>
+						<li>✓ Avantage 2</li>
+						<li>✓ Avantage 3</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">9.0</p>
+						<p class="casino-card__stars">★★★★★</p>
 						<a
+							class="casino-card__button"
 							href="https://robocat.com/eu"
 							target="_blank"
-							rel="nofollow noopener noreferrer"
-							>100% Jusqu'à 500 € + 200 Free Spins + 1 Bonus Crab</a
+							rel="noopener noreferrer"
+							>Jouez maintenant!</a
 						>
-					</li>
-					<li>
-						<strong>Sushi Casino 8.9</strong> –
+					</div>
+				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="placeholder-logo5.jpg"
+							alt="Logo de Sushi Casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">Sushi Casino</h2>
+							<p class="casino-card__bonus">Jusqu'à 2500 € + 50 Free Spins</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Avantage 1</li>
+						<li>✓ Avantage 2</li>
+						<li>✓ Avantage 3</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">8.9</p>
+						<p class="casino-card__stars">★★★★★</p>
 						<a
+							class="casino-card__button"
 							href="https://www.sush1casin0.com/fr"
 							target="_blank"
-							rel="nofollow noopener noreferrer"
-							>Jusqu'à 2500 € + 50 Free Spins</a
+							rel="noopener noreferrer"
+							>Jouez maintenant!</a
 						>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</section>
 			<section class="landing-content">
-				<h3>Descriptions des casinos</h3>
 				<p>
-					<strong>Volerbet Casino</strong>: Le nouveau casino en ligne en France
-					pour débuter et gagner en toute sécurité.
+					1.<strong>Volerbet Casino</strong>: Le nouveau casino en ligne en
+					France pour débuter et gagner en toute sécurité.
 				</p>
 				<p>
-					<strong>Stonevegas Casino</strong>: L’expérience casino haut de gamme
-					100 % française avec des jackpots exclusifs.
+					2.<strong>Stonevegas Casino</strong>: L’expérience casino haut de
+					gamme 100 % française avec des jackpots exclusifs.
 				</p>
 				<p>
-					<strong>GoldSpin Casino</strong>: Le casino en ligne français qui
+					3.<strong>GoldSpin Casino</strong>: Le casino en ligne français qui
 					transforme chaque spin en trésor.
 				</p>
 				<p>
-					<strong>Robocat Casino</strong>: Le casino en ligne high-tech de
+					4.<strong>Robocat Casino</strong>: Le casino en ligne high-tech de
 					France dédié aux joueurs modernes et ambitieux.
 				</p>
 				<p>
-					<strong>Sushi Casino</strong>: Le casino en ligne au style japonais
+					5.<strong>Sushi Casino</strong>: Le casino en ligne au style japonais
 					qui séduit les joueurs français en 2025.
 				</p>
 
 				<h3>Détails par casino</h3>
 
-				<h4>
+				<h3>
 					🎰 Volerbet Casino – Casino en ligne français idéal pour débutants
 					ambitieux
-				</h4>
+				</h3>
 				<p>
 					Volerbet est un nouveau casino en ligne avec une interface claire,
 					bonus sans dépôt, et un support en français disponible 24/7.
@@ -656,10 +711,10 @@
 					</li>
 				</ul>
 
-				<h4>
+				<h3>
 					🎰 GoldSpin Casino – Le casino en ligne français spécialisé en
 					machines à sous lucratives
-				</h4>
+				</h3>
 				<p>
 					GoldSpin mise sur les slots à forte volatilité avec des RTP élevés,
 					offrant de nombreux free spins et promotions régulières.
@@ -675,10 +730,10 @@
 					</li>
 				</ul>
 
-				<h4>
+				<h3>
 					🎰 Robocat Casino – Casino en ligne futuriste avec des paiements
 					ultra-rapides
-				</h4>
+				</h3>
 				<p>
 					Robocat propose une approche techno et novatrice avec des retraits en
 					moins d’une heure, un design innovant, et une sécurité renforcée.
