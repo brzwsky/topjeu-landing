@@ -67,7 +67,7 @@
 				color: #fff;
 				margin-left: 2rem;
 				text-decoration: none;
-				font-size: 1.7rem;
+				font-size: 1.3rem;
 			}
 
 			/* Body */
@@ -76,6 +76,7 @@
 				font-family: Arial, sans-serif;
 				background: #fff;
 				color: #000;
+				font-size: 1rem; /* 16px */
 			}
 
 			/* Hero Section */
@@ -304,7 +305,58 @@
 			.landing-content li {
 				margin-bottom: 0.5rem;
 			}
+			html {
+				min-height: 100%;
+				position: relative;
+			}
+
+			body {
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+
+			main {
+				flex: 1;
+			}
 		</style>
+		<!-- SEO + Open Graph + Schema -->
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="TopJeu - Casinos Fiables en Ligne 2025"
+		/>
+		<meta
+			property="og:description"
+			content="Découvrez les meilleurs casinos fiables en ligne en France avec bonus, avis et conseils à jour."
+		/>
+		<meta property="og:image" content="https://example.com/img/preview.jpg" />
+		<meta property="og:url" content="https://example.com/" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="TopJeu - Casinos Fiables en Ligne 2025"
+		/>
+		<meta
+			name="twitter:description"
+			content="Classement et comparatif des meilleurs casinos en ligne français en 2025."
+		/>
+		<meta name="twitter:image" content="https://example.com/img/preview.jpg" />
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebPage",
+				"name": "TopJeu - Casinos Fiables en Ligne 2025",
+				"description": "Classement des meilleurs casinos en ligne fiables en France. Bonus, avis, retraits rapides.",
+				"inLanguage": "fr",
+				"url": "https://example.com/",
+				"author": {
+					"@type": "Person",
+					"name": "Jean Dupont"
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<!-- Header -->
@@ -334,25 +386,18 @@
 					Par Jean Dupont · Dernière mise à jour : 12 juin 2025
 				</p>
 				<p class="hero__text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in
-					tincidunt tortor. In sit amet risus vel quam cursus iaculis.
+					Le marché du casino en ligne en France ne cesse de croître, avec une
+					offre toujours plus riche et compétitive. Que vous soyez un joueur
+					occasionnel ou un passionné de jeux de hasard, choisir la bonne
+					plateforme est essentiel pour une expérience sécurisée, fluide et
+					divertissante.
 				</p>
-			</section>
-
-			<!-- Filter Buttons -->
-			<section class="filter">
-				<button class="filter__button" aria-label="Filtrer tous les casinos">
-					All
-				</button>
-				<button class="filter__button" aria-label="Filtrer les casinos crypto">
-					Casino Crypto
-				</button>
-				<button
-					class="filter__button"
-					aria-label="Filtrer les casinos sans KYC"
-				>
-					Sans KYC
-				</button>
+				<p>
+					Voici mon
+					<strong>Top 5 des meilleurs casinos en ligne français</strong>, basé
+					sur des critères comme la fiabilité, les bonus, la ludothèque, le
+					service client et la rapidité des retraits.
+				</p>
 			</section>
 
 			<!-- Casino Cards -->
@@ -383,15 +428,120 @@
 						<a class="casino-card__button" href="#">Jouez maintenant !</a>
 					</div>
 				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="abstract-image.jpg"
+							alt="Logo du casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">Lorem Casino</h2>
+							<p class="casino-card__bonus">
+								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
+							</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Lorem ipsum advantage</li>
+						<li>✓ Another great feature</li>
+						<li>✓ Support 24/7</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">10</p>
+						<p class="casino-card__stars">★★★★★</p>
+						<a class="casino-card__button" href="#">Jouez maintenant !</a>
+					</div>
+				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="abstract-image.jpg"
+							alt="Logo du casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">Lorem Casino</h2>
+							<p class="casino-card__bonus">
+								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
+							</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Lorem ipsum advantage</li>
+						<li>✓ Another great feature</li>
+						<li>✓ Support 24/7</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">10</p>
+						<p class="casino-card__stars">★★★★★</p>
+						<a class="casino-card__button" href="#">Jouez maintenant !</a>
+					</div>
+				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="abstract-image.jpg"
+							alt="Logo du casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">Lorem Casino</h2>
+							<p class="casino-card__bonus">
+								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
+							</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Lorem ipsum advantage</li>
+						<li>✓ Another great feature</li>
+						<li>✓ Support 24/7</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">10</p>
+						<p class="casino-card__stars">★★★★★</p>
+						<a class="casino-card__button" href="#">Jouez maintenant !</a>
+					</div>
+				</div>
+				<div class="casino-card">
+					<div class="casino-card__info">
+						<img
+							class="casino-card__image"
+							src="abstract-image.jpg"
+							alt="Logo du casino"
+							loading="lazy"
+						/>
+						<div>
+							<h2 class="casino-card__title">Lorem Casino</h2>
+							<p class="casino-card__bonus">
+								Bonus de bienvenue: Lorem 100% + 200 tours gratuits
+							</p>
+						</div>
+					</div>
+					<ul class="casino-card__features">
+						<li>✓ Lorem ipsum advantage</li>
+						<li>✓ Another great feature</li>
+						<li>✓ Support 24/7</li>
+					</ul>
+					<div class="casino-card__rating">
+						<p class="casino-card__score">10</p>
+						<p class="casino-card__stars">★★★★★</p>
+						<a class="casino-card__button" href="#">Jouez maintenant !</a>
+					</div>
+				</div>
 			</section>
 			<section class="landing-content">
 				<h2>Les meilleurs casinos en ligne français fiables en 2025</h2>
 				<p>
-					Le marché du casino en ligne en France ne cesse de croître, avec une
-					offre toujours plus riche et compétitive. Que vous soyez un joueur
-					occasionnel ou un passionné de jeux de hasard, choisir la bonne
-					plateforme est essentiel pour une expérience sécurisée, fluide et
-					divertissante.
+					Le marché du
+					<span>casino en <strong>ligne en France</strong></span> ne cesse de
+					croître, avec une offre toujours plus riche et compétitive. Que vous
+					soyez un joueur occasionnel ou un passionné de jeux de hasard, choisir
+					la bonne plateforme est essentiel pour une expérience sécurisée,
+					fluide et divertissante.
 				</p>
 				<p>
 					Voici mon Top 5 des meilleurs casinos en ligne français, basé sur des
